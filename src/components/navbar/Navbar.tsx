@@ -1,5 +1,3 @@
-import './Navbar.css'
-
 function Navbar() {
  
 return (
@@ -10,7 +8,7 @@ return (
       <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0 lg:py-5">
         <div className="w-full items-center flex justify-between lg:w-auto">
           <a className="relative z-10 text-sm font-semibold text-primary dark:text-primaryLight lg:text-2xl text-xl uppercase font-bold" href="#" aria-label="logo">
-            Farma Crud
+            Farmacia Online
           </a>
         </div>
         <div className="navmenu hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border border-gray-100 rounded-3xl shadow-2xl shadow-gray-300/20 bg-white dark:bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none dark:shadow-none dark:border-gray-700 lg:border-0">
@@ -24,22 +22,6 @@ return (
                   <span>Home</span>
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
-                >
-                  <span>Portfolio</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block md:px-4 transition hover:text-primary dark:hover:text-primaryLight"
-                >
-                  <span>Services</span>
-                </a>
-              </li>
             </ul>
           </div>
           <div className="w-full space-y-2 border-primary/10 dark:border-gray-700 flex flex-col -ml-1 sm:flex-row lg:space-y-0 md:w-max lg:border-l">
@@ -48,7 +30,7 @@ return (
               className="relative flex h-9 ml-auto items-center justify-center sm:px-6 before:absolute before:inset-0 before:rounded-full focus:before:bg-sky-600/10 dark:focus:before:bg-sky-400/10 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
             >
               <span className="relative text-sm font-semibold text-primary dark:text-primaryLight">
-                Sign Up
+                Cadastre-se
               </span>
             </a>
             <a

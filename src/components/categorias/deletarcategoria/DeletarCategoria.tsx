@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import categoria from '../../../models/Categoria'
 import { buscar, deletar } from '../../../services/Service'
@@ -17,7 +17,7 @@ function DeletarCategoria() {
             await buscar(`/categorias/${id}`, setCategoria)
         } catch (error: any) {
             if (error.toString().includes('403')) {
-                toastAlerta('O token expirou, favor logar novamente', 'info')
+                toastAlerta('O token expirou, por favor faça login outra vez', 'info')
             }
         }
     }
@@ -35,7 +35,7 @@ function DeletarCategoria() {
     async function deletarCategoria() {
         try {
             await deletar(`/categorias/${id}`)
-            toastAlerta('categoria apagado com sucesso', 'sucesso')
+            toastAlerta('categoria apagada com sucesso', 'sucesso')
 
         } catch (error) {
             toastAlerta('Erro ao apagar o categoria', 'erro')

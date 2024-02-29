@@ -3,7 +3,7 @@ import Categoria from './Categoria';
 export default interface Postagem {
   id: number;
   nome: string;
-  valor: string;
+  preco: string;
   descricao: string;
   categoria: Categoria | null;
 }

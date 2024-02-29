@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Dna } from 'react-loader-spinner';
+import { useEffect, useState } from 'react';
+import { DNA } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import Categoria from '../../../models/Categoria';
 import { buscar } from '../../../services/Service';
@@ -16,7 +16,7 @@ function ListaCategorias() {
       await buscar('/categorias', setCategorias);
     } catch (error: any) {
       if(error.toString().includes('403')) {
-        toastAlerta('O token expirou, favor logar novamente', 'info')
+        toastAlerta('O token expirou, por favor faça login outra vez', 'info')
       }
     }
   }
@@ -27,7 +27,7 @@ function ListaCategorias() {
   return (
     <>
       {categorias.length === 0 && (
-        <Dna
+        <DNA
           visible={true}
           height="200"
           width="200"

@@ -7,7 +7,7 @@ function Catalogo() {
           <div className='container grid grid-cols-2 text-white'>
             <div className="flex flex-col gap-4 items-center justify-center py-4">
               <h2 className='text-5xl font-bold'>Seja bem vinde!</h2>
-              <p className='text-xl'>Dê uma olhada em nossos produtos</p>
+              <p className='text-xl'>Encontre nossos produtos</p>
   
             </div>
   
