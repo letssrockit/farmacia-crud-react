@@ -4,7 +4,7 @@ function Footer() {
 
     const footerComponent = (
       <>
-        <div className="flex justify-center bg-indigo-900 text-white">
+        <div className="flex justify-center bg-green-900 text-white">
           <div className="container flex flex-col items-center py-4">
             <p className='text-xl font-bold'>Farmacia Online | Copyright: Leticia Rocha </p>
             <p className='text-lg'>Acesse nossas redes sociais</p>
